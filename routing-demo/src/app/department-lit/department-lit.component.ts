@@ -30,7 +30,8 @@ export class DepartmentListComponent implements OnInit {
   constructor(private _router:Router, private _route:ActivatedRoute) { }
 
   public onSelect(department){
-      this._router.navigate(['/department',department.id])
+      // this._router.navigate(['/department',department.id])
+      this._router.navigate([department.id],{relativeTo:this._route})
   }
   public selectedId;
 

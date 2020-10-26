@@ -7,6 +7,7 @@ import { DepartmentListComponent } from './department-lit/department-lit.compone
 import { EmployeeListComponent } from './employee-lit/employee-lit.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DepartmentDetailComponent } from './department-detail/department-detail.component';
+import { DepartmentContactComponent } from './department-contact/department-contact.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DepartmentDetailComponent } from './department-detail/department-detail
     DepartmentListComponent,
     EmployeeListComponent,
     PageNotFoundComponent,
-    DepartmentDetailComponent
+    DepartmentDetailComponent,
+    DepartmentContactComponent
   ],
   imports: [
     BrowserModule,
