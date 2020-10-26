@@ -1,0 +1,15 @@
+<p>event-binding works!</p>
+<button (click)="onClick($event)">Greet</button>
+<button (click)="greeting='gans_bourne'">Greet</button>
+{{greeting}}
+<br/>
+<p>below is for template ref variable</p>
+<br/>
+<input type="text" name="" id="" #myInput>
+<button (click)="logMessage(myInput)">Log</button>
+<br/>
+<p>2 way binding</p>
+<br/>
+<input type="text" name="" id="" [(ngModel)]="name" >
+{{name}}
+ 

@@ -1,0 +1,12 @@
+<p>class-binding works!</p>
+<h2>welcome {{name}}</h2>
+<h2 [class]="successClass">i'm the web developer</h2>
+<h2 class="text-danger">i'm the web developer</h2>
+<h2 class="text-danger text-speacial">i'm the web developer</h2>
+<h2 [class.text-danger]="hasError">i'm the web developer</h2>
+<h2 class="text-speacial" [class]="successClass">i'm the web developer</h2>
+
+<p>below is from ngclass</p>
+<!-- ngClass for applying multiple classes by passing as a object with
+ key as a className and value as true will render it as class applied -->
+<h2 [ngClass]="messageClasses" >gans_bourne</h2>
