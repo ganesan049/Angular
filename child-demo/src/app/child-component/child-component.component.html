@@ -1,0 +1,10 @@
+<div class="" style="background-color: green;">
+  <p>child-component works!</p>
+  {{ loggedIn }}
+  <p *ngIf="loggedIn; else elseBlock">Welcome Back</p>
+  <ng-template #elseBlock>
+    <p>Plese Login to cont...</p>
+  </ng-template>
+  <h2>By set get for input</h2>
+  <p>{{message}}</p>
+</div>

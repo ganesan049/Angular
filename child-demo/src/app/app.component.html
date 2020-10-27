@@ -1,0 +1,20 @@
+<div>
+  <p>Parent Component</p>
+  <button (click)="userLoggedIn=true" >Login</button>
+  <button (click)="userLoggedIn=false" >LogOut</button>
+  {{userLoggedIn}}
+  <br/>
+  {{child.name}}
+  <button (click)="child.greetUser()" >Greet Child</button>
+  <button (click)="childComponentRef.greetUser()" >Greet From Ref!</button>
+</div>
+<app-child-component [loggedInStatus]="userLoggedIn" ></app-child-component>
+<!-- <app-child-component  [childValue]="false" [loggedInStatus]="true" ></app-child-component> -->
+<hr/>
+<br/>
+<app-child-component-tow #child [loggedInStatus]="userLoggedIn" ></app-child-component-tow>
+<hr/>
+<br/>
+<div class="" style="background-color: blue;">
+<app-child-parent (greetEvent)="greet($event)" ></app-child-parent>
+</div>

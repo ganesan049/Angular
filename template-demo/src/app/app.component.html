@@ -1,0 +1,35 @@
+<div>
+  <p>{{ title }}</p>
+  <img [src]="imgUrl" alt="" srcset="" />
+</div>
+<div class="">
+  <button (click)="incrementCount()">Click</button>
+  {{ count }}
+</div>
+<div class="">
+  <p>By ngModel</p>
+  <input type="text" name="" [(ngModel)]="name" id="" />
+  <p>welcome {{ name }}</p>
+</div>
+<div class="">
+  <p>By splitting ngMode</p>
+  <input
+    type="text"
+    name=""
+    [ngModel]="userName"
+    (ngModelChange)="greetUser($event)"
+    id=""
+  />
+  <p>welcome {{ userName }}</p>
+</div>
+<div class="">
+  <p>By get and set</p>
+  <input type="text" name="" [(ngModel)]="customerName" id="" />
+  <p>welcome {{ customerName }}</p>
+</div>
+<div class="">
+  <p>By nameRef for focusing</p>
+  <input #nameRef type="text" name="" [(ngModel)]="name" id="" />
+  <p>welcome {{ name }}</p>
+</div>
+<router-outlet></router-outlet>
